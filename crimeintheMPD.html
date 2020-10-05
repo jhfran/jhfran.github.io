@@ -1651,9 +1651,9 @@ summary {
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
 <p>The Metropolitan Police District (MPD) is the area of Greater London policed by the Metropolitan Police (Met Police). This area contains the 32 Greater London boroughs with the exclusion of the City of London.</p>
-<p>I explored crime data provided by the Met Police to gain insight into the level of crime and type of recorded offences in the MPD. Furthermore, using number of recorded offences as an indicator of safety, I aimed to answer the question: <strong>what were the safest and most dangerous boroughs within the London Metropolitan Police District in 2018</strong>?</p>
-<p>For the year 2018, Sutton was found to be the safest borough in the MPD and Westminister was found to be the most dangerous.</p>
-<p><em>Crimes committed in the City of London were not covered as they are under the jurisdiction of the City of London Police. This project was also carried out at end of 2019. Analysis may be updated in the future to include the City of London, crime rates (as opposed to ‘number of recorded offences’) and take more recent years into account</em></p>
+<p>I explored crime data provided by the Met Police to gain insight into the level of crime and type of recorded offences in the MPD. Furthermore, using number of recorded offences as an indicator of safety, I aimed to answer the question: what were the safest and most dangerous boroughs within the London Metropolitan Police District in 2018?</p>
+<p><strong>For the year 2018, Sutton was found to be the safest borough in the MPD and Westminster was found to be the most dangerous.</strong></p>
+<p><em>Crimes committed in the City of London were not covered as they are under the jurisdiction of the City of London Police. This project was also carried out at the end of 2019. Analysis may be updated in the future to include the City of London, crime rates (as opposed to ‘number of recorded offences’) and take more recent years into account</em></p>
 </div>
 <div id="objectives" class="section level1">
 <h1>Objectives</h1>
@@ -1664,8 +1664,8 @@ summary {
 <li><p>Gain further insight into the crimes committed in the MPD by analysing the offence categories with the highest number of recorded offences for the chosen year</p></li>
 <li><p>Analyse the offence types to understand the number of offences at the offence type level</p></li>
 <li><p>Examine a heatmap and rank borough safety using the number of recorded offences as an indicator</p></li>
-<li><p>Group boroughs with similar safety levels through k-means clustering. Furthermore, I wanted to see if I could find a cluster of boroughs with the highest crime levels and a cluster of boroughs with the lowest crime levels.</p></li>
-<li><p>Finally, look at the top 3 offence types committed in the safest and most dangerous MPD boroughs that were identified through clustering.</p></li>
+<li><p>Group boroughs with similar safety levels through k-means clustering. Furthermore, I wanted to see if I could find a cluster of boroughs with the highest crime levels and a cluster of boroughs with the lowest crime levels</p></li>
+<li><p>Finally, look at the top 3 offence types committed in the safest and most dangerous MPD boroughs that were identified through clustering</p></li>
 </ol>
 </div>
 <div id="data" class="section level1">
@@ -1855,13 +1855,13 @@ Cluster 3
 <div id="conclusion" class="section level1">
 <h1>Conclusion</h1>
 <ul>
-<li><p>The year 2018 saw the second highest number of recorded offences in the MPD of 839,422 offences between 2008-2018.</p></li>
-<li><p>Upon closer investigation of crimes committed in 2018, theft and handling and violence against the person were the 2 categories with the most recorded offences in the MPD. It was found that 37.89% of all offences in the MPD in 2018 were under the theft and handling category, 30.86% of the total offences were under the violence against the person category.</p></li>
-<li><p>At the type level, other theft and harassment were the two type levels with the highest number of recorded offences accounting for 13.41% and 10.83% of recorded offences respectively.</p></li>
-<li><p>Using the dissimilarity matrix in Figure 4B and the bar chart of offences at the borough level (Figure 4A), Westminster was a clear outlier, with the most number of recorded offences of any other MPD borough. It had large dissimilarities with all other boroughs and was therefore removed from the dataset to complete k-means cluster analysis.</p></li>
-<li><p>Through cluster analysis, 3 clusters were identified. Cluster 1 of size 8 was determined to contain the safest boroughs, Cluster 2 was seen to contain the second safest/most dangerous boroughs with cluster size 15. Cluster 3 was of size 9 and was established as containing the most dangerous boroughs (in addition to Westminster).</p></li>
-<li><p>Sutton was found to be the safest borough in the MPD in 2018 when number of recorded offences was used as an indicator of overall safety. Cluster 1 had the safest boroughs in the MPD in 2018. Kingston upon Thames was the second safest borough followed by Richmond upon Thames, Merton, Harrow, Bexley, Barking and Dagenham and Havering.</p></li>
-<li><p>Westminster, however, was the most dangerous borough in the MPD in 2018 by a large margin. The other most dangerous boroughs were found in Cluster 3 - Newham was the second most dangerous borough, followed by Southwark, Camden, Lambeth, Tower Hamlets, Hackney, Haringey and Croydon.</p></li>
+<li><p>The year 2018 saw the second highest number of recorded offences in the MPD of 839,422 offences between 2008-2018</p></li>
+<li><p>Upon closer investigation of crimes committed in 2018, theft and handling and violence against the person were the 2 categories with the most recorded offences in the MPD. It was found that 37.89% of all offences in the MPD in 2018 were under the theft and handling category, 30.86% of the total offences were under the violence against the person category</p></li>
+<li><p>At the type level, other theft and harassment were the two type levels with the highest number of recorded offences accounting for 13.41% and 10.83% of recorded offences respectively</p></li>
+<li><p>Using the dissimilarity matrix in Figure 4B and the bar chart of offences at the borough level (Figure 4A), Westminster was a clear outlier, with the most number of recorded offences of any other MPD borough. It had large dissimilarities with all other boroughs and was therefore removed from the dataset to complete k-means cluster analysis</p></li>
+<li><p>Through cluster analysis, 3 clusters were identified. Cluster 1 of size 8 was determined to contain the safest boroughs, Cluster 2 was seen to contain the second safest/most dangerous boroughs with cluster size 15. Cluster 3 was of size 9 and was established as containing the most dangerous boroughs (in addition to Westminster)</p></li>
+<li><p>Sutton was found to be the safest borough in the MPD in 2018 when number of recorded offences was used as an indicator of overall safety. Cluster 1 had the safest boroughs in the MPD in 2018. Kingston upon Thames was the second safest borough followed by Richmond upon Thames, Merton, Harrow, Bexley, Barking and Dagenham and Havering</p></li>
+<li><p>Westminster, however, was the most dangerous borough in the MPD in 2018 by a large margin. The other most dangerous boroughs were found in Cluster 3 - Newham was the second most dangerous borough, followed by Southwark, Camden, Lambeth, Tower Hamlets, Hackney, Haringey and Croydon</p></li>
 </ul>
 </div>
 <div id="references" class="section level1">
